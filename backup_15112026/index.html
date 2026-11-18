@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ozias dos Santos — Consultor financeiro e palestrante cristão. Finanças com base bíblica, calculadora de investimentos e desafios.">
+  <meta name="theme-color" content="#05070f">
+  <title>Ozias dos Santos · Finanças com base bíblica</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="topo">
+    <div class="container header-inner">
+      <a href="#topo" class="brand" aria-label="Ozias dos Santos — início">
+        <span class="brand-mark" aria-hidden="true">OZ</span>
+        <span class="brand-word">Ozias dos Santos</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#sobre">O palestrante</a>
+        <a href="#principios">Princípios</a>
+        <a href="#simulador">Calculadora</a>
+        <a href="#investimentos">Investimentos</a>
+        <a href="#desafios">Desafios</a>
+        <a href="#contato" class="btn btn-gold-nav">Começar agora</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <div class="hero-aurora" aria-hidden="true"></div>
+      <div class="hero-orb orb-a" aria-hidden="true"></div>
+      <div class="hero-orb orb-b" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-main">
+          <p class="overline"><span class="dot"></span> Consultor financeiro · Palestrante cristão</p>
+          <h1 class="hero-title">
+            Transforme o seu dinheiro em um <em class="serif">instrumento de propósito</em>
+          </h1>
+          <p class="hero-lead">
+            Sou <strong>Ozias dos Santos</strong>. Há mais de 12 anos ajudo famílias, igrejas e
+            empreendedores a sair das dívidas, poupar com sabedoria e investir com segurança —
+            com a Bíblia como bússola e os números como mapa.
+          </p>
+          <div class="hero-actions">
+            <a href="#simulador" class="btn btn-primary magnetic">Simular meu investimento <span aria-hidden="true">→</span></a>
+            <a href="#investimentos" class="btn btn-line magnetic">Explorar investimentos</a>
+          </div>
+
+          <dl class="hero-stats" aria-label="Números de impacto">
+            <div><dt data-count="3200000" data-prefix="R$ " data-dec="0">R$ 0</dt><dd>em dívidas quitadas</dd></div>
+            <div><dt data-count="420">0</dt><dd>famílias assessoradas</dd></div>
+            <div><dt data-count="180" data-suffix="+">0</dt><dd>palestras ministradas</dd></div>
+            <div><dt data-count="12">0</dt><dd>anos de experiência</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-portrait reveal">
+          <div class="portrait-card">
+            <div class="portrait-photo">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Retrato de Ozias dos Santos, consultor financeiro e palestrante cristão" width="420" height="420" loading="eager">
+            </div>
+            <span class="portrait-goldline" aria-hidden="true"></span>
+            <div class="portrait-caption">
+              <strong>Ozias dos Santos</strong>
+              <span>Consultor &amp; palestrante</span>
+            </div>
+          </div>
+
+          <figure class="verse-badge" aria-label="Versículo em destaque">
+            <span class="verse-ref">Provérbios 27:23</span>
+            <blockquote>“Conhece bem o estado das tuas ovelhas e atenta para o teu rebanho.”</blockquote>
+          </figure>
+
+          <div class="portrait-sig" aria-hidden="true">Ozias dos Santos</div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Finanças bíblicas</span><i>✦</i>
+          <span>Planejamento</span><i>✦</i>
+          <span>Investimentos</span><i>✦</i>
+          <span>Calculadora</span><i>✦</i>
+          <span>Desafios</span><i>✦</i>
+          <span>Mentoria</span><i>✦</i>
+          <span>Finanças bíblicas</span><i>✦</i>
+          <span>Planejamento</span><i>✦</i>
+          <span>Investimentos</span><i>✦</i>
+          <span>Calculadora</span><i>✦</i>
+          <span>Desafios</span><i>✦</i>
+          <span>Mentoria</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE / PALESTRANTE ================= -->
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <p class="overline">Quem é Ozias</p>
+          <h2 class="section-title">Da bancarrota à bênção, <em class="serif">um método nasceu no caminho</em></h2>
+          <p>
+            Em 2011, endividado e sem rumo, Ozias descobriu que a Bíblia fala de finanças mais
+            vezes do que de oração. Estudou as Escrituras e a administração financeira lado a
+            lado e construiu um método simples, prático e profundamente bíblico.
+          </p>
+          <p>
+            Hoje é <strong>consultor financeiro</strong>, <strong>palestrante</strong> e
+            <strong>mentor</strong>, percorrendo o Brasil para levar o púlpito à planilha —
+            transformando princípios eternos em decisões financeiras concretas.
+          </p>
+
+          <ul class="about-tags">
+            <li>Consultoria individual e familiar</li>
+            <li>Palestras e seminários para igrejas</li>
+            <li>Mentoria em grupo e desafios</li>
+            <li>Educador financeiro certificado — CEDAF</li>
+          </ul>
+
+          <div class="about-sign" aria-hidden="true">Ozias dos Santos</div>
+
+          <a href="#contato" class="btn btn-primary magnetic">Agendar uma conversa <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="about-visual reveal">
+          <div class="about-frame">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ozias dos Santos, consultor financeiro e palestrante cristão" width="420" height="560" loading="lazy">
+          </div>
+          <div class="about-float">
+            <strong>CEDAF</strong>
+            <span>Educador financeiro certificado</span>
+          </div>
+          <div class="about-float about-float-b">
+            <strong>12 anos</strong>
+            <span>transformando vidas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRINCÍPIOS ================= -->
+    <section class="section section-dark" id="principios">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="overline overline-light">Fundamento</p>
+          <h2 class="section-title">Cinco pilares da <em class="serif">finança bíblica</em></h2>
+          <p class="section-sub">Toda recomendação que faço nasce destes princípios, direto das Escrituras.</p>
+        </header>
+
+        <ol class="pillars">
+          <li class="pillar reveal">
+            <span class="pillar-num">01</span>
+            <h3>Dízimo &amp; oferta</h3>
+            <p>“Trazei todos os dízimos à casa do tesouro” — Malaquias 3:10. O ponto de partida da ordem.</p>
+          </li>
+          <li class="pillar reveal">
+            <span class="pillar-num">02</span>
+            <h3>Viver sem dívidas</h3>
+            <p>“O devedor é servo do credor” — Provérbios 22:7. Sair das dívidas é libertação.</p>
+          </li>
+          <li class="pillar reveal">
+            <span class="pillar-num">03</span>
+            <h3>Reserva de emergência</h3>
+            <p>“Olha para a formiga… provê no verão o seu pão” — Provérbios 6:6–8. Poupe para o inverno.</p>
+          </li>
+          <li class="pillar reveal">
+            <span class="pillar-num">04</span>
+            <h3>Planejamento</h3>
+            <p>“Do homem são as preparações do coração” — Provérbios 16:1. Orçamento que adora.</p>
+          </li>
+          <li class="pillar reveal">
+            <span class="pillar-num">05</span>
+            <h3>Generosidade</h3>
+            <p>“Dai, e dar-se-vos-á” — Lucas 6:38. O dar abre canais que o salário jamais abre.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CALCULADORA ================= -->
+    <section class="section section-alt" id="simulador">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="overline">Projeção de rendimentos</p>
+          <h2 class="section-title">Calculadora de <em class="serif">investimento</em></h2>
+          <p class="section-sub">
+            Informe quanto quer investir e veja uma <strong>estimativa de ganho</strong> em cada
+            tipo de aplicação, calculada com juros compostos e taxas médias de referência do mercado.
+          </p>
+        </header>
+
+        <div class="calc-grid reveal">
+          <!-- Controles -->
+          <div class="calc-panel">
+            <div class="calc-mode">
+              <button class="mode-btn is-active" data-mode="unique" type="button">Aporte único</button>
+              <button class="mode-btn" data-mode="monthly" type="button">Aporte mensal</button>
+            </div>
+
+            <div class="calc-field">
+              <label for="calcAmount" id="calcAmountLabel">Valor a investir</label>
+              <div class="calc-input">
+                <span class="calc-currency">R$</span>
+                <input type="text" id="calcAmount" value="1.000,00" placeholder="0,00" inputmode="decimal" autocomplete="off">
+              </div>
+            </div>
+
+            <div class="calc-total" id="calcTotal">Total investido: R$ 0,00</div>
+
+            <div class="calc-field">
+              <label for="calcMonths">Prazo: <strong id="calcMonthsLabel">24 meses (2 anos)</strong></label>
+              <input type="range" id="calcMonths" min="6" max="240" step="6" value="24" class="calc-range">
+              <div class="calc-range-labels"><span>6 meses</span><span>20 anos</span></div>
+            </div>
+
+            <div class="calc-live" id="calcLive" role="status" aria-live="polite">
+              <span class="calc-live-dot" aria-hidden="true"></span>
+              <span id="calcLiveText">Carregando taxa Selic…</span>
+            </div>
+
+            <p class="calc-disclaimer">
+              <strong>Selic, CDI e IPCA+</strong> são atualizados automaticamente pela API do
+              Banco Central. FIIs e Ações são projeções educativas de longo prazo. Nada aqui é
+              garantia de rentabilidade.
+            </p>
+          </div>
+
+          <!-- Resultados -->
+          <div class="calc-results" id="calcResults">
+
+            <article class="calc-card" data-key="selic" data-rate>
+              <div class="calc-card-head">
+                <h3>Tesouro Selic</h3>
+                <span class="calc-rate">11,15% a.a.</span>
+              </div>
+              <p class="calc-desc">Títulos públicos, liquidez diária, garantia do governo. Acompanha a Selic.</p>
+              <div class="calc-numbers">
+                <div><span>Valor final</span><strong class="calc-final">—</strong></div>
+                <div><span>Ganho estimado</span><strong class="calc-gain">—</strong></div>
+              </div>
+              <div class="calc-bar"><i></i></div>
+            </article>
+
+            <article class="calc-card" data-key="cdb" data-rate>
+              <div class="calc-card-head">
+                <h3>CDB 100% CDI</h3>
+                <span class="calc-rate">10,90% a.a.</span>
+              </div>
+              <p class="calc-desc">Renda fixa privada de bancos, coberta pelo FGC. Acompanha o CDI.</p>
+              <div class="calc-numbers">
+                <div><span>Valor final</span><strong class="calc-final">—</strong></div>
+                <div><span>Ganho estimado</span><strong class="calc-gain">—</strong></div>
+              </div>
+              <div class="calc-bar"><i></i></div>
+            </article>
+
+            <article class="calc-card" data-key="ipca" data-rate>
+              <div class="calc-card-head">
+                <h3>Tesouro IPCA+</h3>
+                <span class="calc-rate">IPCA + 6,5%</span>
+              </div>
+              <p class="calc-desc">Protege seu poder de compra contra a inflação (IPCA real + spread).</p>
+              <div class="calc-numbers">
+                <div><span>Valor final</span><strong class="calc-final">—</strong></div>
+                <div><span>Ganho estimado</span><strong class="calc-gain">—</strong></div>
+              </div>
+              <div class="calc-bar"><i></i></div>
+            </article>
+
+            <article class="calc-card" data-key="fii">
+              <div class="calc-card-head">
+                <h3>Fundos imobiliários (FIIs)</h3>
+                <span class="calc-rate">~9,6% a.a.</span>
+              </div>
+              <p class="calc-desc">Renda mensal de aluguéis, isenta de IR para pessoa física.</p>
+              <p class="calc-proj">Projeção educativa de longo prazo — sem taxa oficial única no Banco Central.</p>
+              <div class="calc-numbers">
+                <div><span>Valor final</span><strong class="calc-final">—</strong></div>
+                <div><span>Ganho estimado</span><strong class="calc-gain">—</strong></div>
+              </div>
+              <div class="calc-bar"><i></i></div>
+            </article>
+
+            <article class="calc-card" data-key="acoes">
+              <div class="calc-card-head">
+                <h3>Ações &amp; ETFs</h3>
+                <span class="calc-rate">~12,5% a.a.</span>
+              </div>
+              <p class="calc-desc">Maior potencial de retorno no longo prazo, com volatilidade.</p>
+              <p class="calc-proj">Projeção educativa de longo prazo — sem taxa oficial única no Banco Central.</p>
+              <div class="calc-numbers">
+                <div><span>Valor final</span><strong class="calc-final">—</strong></div>
+                <div><span>Ganho estimado</span><strong class="calc-gain">—</strong></div>
+              </div>
+              <div class="calc-bar"><i></i></div>
+            </article>
+
+          </div>
+        </div>
+
+        <p class="calc-note reveal">
+          <strong>Importante:</strong> esta é uma projeção educativa de juros compostos. Não é
+          recomendação de investimento nem garantia de rentabilidade. Para uma carteira
+          personalizada ao seu perfil, <a href="#contato">agende uma consultoria</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= INVESTIMENTOS ================= -->
+    <section class="section" id="investimentos">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="overline">O que ensinamos</p>
+          <h2 class="section-title">Tipos de investimento <em class="serif">para dominar</em></h2>
+          <p class="section-sub">
+            Cada perfil tem seu caminho. Analisamos risco, prazo e propósito antes de qualquer
+            aplicação — “o justo medita antes de responder” (Provérbios 15:28).
+          </p>
+        </header>
+
+        <div class="filters reveal" role="tablist" aria-label="Filtrar por perfil de investidor">
+          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+          <button class="chip" data-filter="conservador" role="tab" aria-selected="false">Conservador</button>
+          <button class="chip" data-filter="moderado" role="tab" aria-selected="false">Moderado</button>
+          <button class="chip" data-filter="arrojado" role="tab" aria-selected="false">Arrojado</button>
+        </div>
+
+        <div class="invest-list" id="investList">
+
+          <article class="invest-row tilt reveal" data-profile="conservador">
+            <div class="invest-index">01</div>
+            <div class="invest-icon" aria-hidden="true">◈</div>
+            <div class="invest-body">
+              <div class="invest-head">
+                <h3>Reserva de emergência</h3>
+                <span class="tag tag-cons">Conservador</span>
+              </div>
+              <p>CDB de liquidez diária, cartão de débito e Tesouro Selic. O alicerce de tudo.</p>
+            </div>
+            <div class="invest-meta">
+              <span>Risco <b>Baixo</b></span>
+              <span>Prazo <b>Imediato</b></span>
+            </div>
+          </article>
+
+          <article class="invest-row tilt reveal" data-profile="conservador">
+            <div class="invest-index">02</div>
+            <div class="invest-icon" aria-hidden="true">◈</div>
+            <div class="invest-body">
+              <div class="invest-head">
+                <h3>Tesouro Direto</h3>
+                <span class="tag tag-cons">Conservador</span>
+              </div>
+              <p>NTN-B e títulos do Tesouro com garantia do governo. Ideal para quem está começando.</p>
+            </div>
+            <div class="invest-meta">
+              <span>Risco <b>Baixo</b></span>
+              <span>Prazo <b>12–36 meses</b></span>
+            </div>
+          </article>
+
+          <article class="invest-row tilt reveal" data-profile="moderado">
+            <div class="invest-index">03</div>
+            <div class="invest-icon" aria-hidden="true">◈</div>
+            <div class="invest-body">
+              <div class="invest-head">
+                <h3>Renda fixa privada</h3>
+                <span class="tag tag-mod">Moderado</span>
+              </div>
+              <p>CDBs, LCIs e debêntures com rentabilidade acima da poupança, risco controlado.</p>
+            </div>
+            <div class="invest-meta">
+              <span>Risco <b>Médio</b></span>
+              <span>Prazo <b>12–24 meses</b></span>
+            </div>
+          </article>
+
+          <article class="invest-row tilt reveal" data-profile="moderado">
+            <div class="invest-index">04</div>
+            <div class="invest-icon" aria-hidden="true">◈</div>
+            <div class="invest-body">
+              <div class="invest-head">
+                <h3>Fundos imobiliários — FIIs</h3>
+                <span class="tag tag-mod">Moderado</span>
+              </div>
+              <p>Renda mensal isenta de IR para pessoa física, com lastro em imóveis reais.</p>
+            </div>
+            <div class="invest-meta">
+              <span>Risco <b>Médio</b></span>
+              <span>Prazo <b>Longo</b></span>
+            </div>
+          </article>
+
+          <article class="invest-row tilt reveal" data-profile="arrojado">
+            <div class="invest-index">05</div>
+            <div class="invest-icon" aria-hidden="true">◈</div>
+            <div class="invest-body">
+              <div class="invest-head">
+                <h3>Renda variável</h3>
+                <span class="tag tag-arr">Arrojado</span>
+              </div>
+              <p>Ações de empresas sólidas, ETFs e BDRs. Comprar com critério, nunca por emoção.</p>
+            </div>
+            <div class="invest-meta">
+              <span>Risco <b>Alto</b></span>
+              <span>Prazo <b>5+ anos</b></span>
+            </div>
+          </article>
+
+          <article class="invest-row tilt reveal" data-profile="arrojado">
+            <div class="invest-index">06</div>
+            <div class="invest-icon" aria-hidden="true">◈</div>
+            <div class="invest-body">
+              <div class="invest-head">
+                <h3>Internacional &amp; diversificação</h3>
+                <span class="tag tag-arr">Arrojado</span>
+              </div>
+              <p>Contas no exterior e renda variável global para proteger o patrimônio do câmbio.</p>
+            </div>
+            <div class="invest-meta">
+              <span>Risco <b>Alto</b></span>
+              <span>Prazo <b>5+ anos</b></span>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="invest-note reveal">
+          <strong>Nota importante:</strong> nenhum destes é recomendação pessoal sem análise do seu
+          perfil. Estes são os modelos que trabalho em consultorias e desafios.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= DESAFIOS ================= -->
+    <section class="section section-dark" id="desafios">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="overline overline-light">Transforme sua rotina</p>
+          <h2 class="section-title">Desafios de <em class="serif">investimento</em></h2>
+          <p class="section-sub">
+            Programas de 21 a 90 dias com missões semanais, encontros ao vivo e uma comunidade
+            que caminha junto. Escolha o seu nível.
+          </p>
+        </header>
+
+        <div class="challenges">
+
+          <article class="challenge tilt reveal">
+            <div class="challenge-top">
+              <span class="challenge-days">7 dias</span>
+              <span class="challenge-level">Iniciante</span>
+            </div>
+            <h3>Desafio Liberdade</h3>
+            <p>Elimine dívidas, monte sua reserva e descubra para onde vai cada real do seu salário.</p>
+            <ul class="challenge-list">
+              <li>Mapa completo das dívidas</li>
+              <li>Orçamento de emergência em 7 dias</li>
+              <li>Primeira reserva de R$ 1.000</li>
+            </ul>
+            <div class="challenge-foot">
+              <span class="price">Gratuito</span>
+              <a href="#contato" class="btn btn-line-light magnetic">Participar</a>
+            </div>
+          </article>
+
+          <article class="challenge challenge-featured tilt reveal">
+            <span class="ribbon">Mais popular</span>
+            <div class="challenge-top">
+              <span class="challenge-days">14 dias</span>
+              <span class="challenge-level">Intermediário</span>
+            </div>
+            <h3>Desafio Sementes</h3>
+            <p>Abra sua conta de investimento, faça os primeiros aportes e veja o dinheiro trabalhar.</p>
+            <ul class="challenge-list">
+              <li>Escolha da corretora certa</li>
+              <li>Tesouro Selic + CDB na prática</li>
+              <li>Aportes automáticos semanais</li>
+              <li>Painel de acompanhamento</li>
+            </ul>
+            <div class="challenge-foot">
+              <span class="price">R$ 97 <small>à vista</small></span>
+              <a href="#contato" class="btn btn-primary magnetic">Participar</a>
+            </div>
+          </article>
+
+          <article class="challenge tilt reveal">
+            <div class="challenge-top">
+              <span class="challenge-days">21 dias</span>
+              <span class="challenge-level">Avançado</span>
+            </div>
+            <h3>Desafio Colheita</h3>
+            <p>Construa sua carteira diversificada entre renda fixa, FIIs e renda variável, com meta clara.</p>
+            <ul class="challenge-list">
+              <li>Carteira modelo personalizada</li>
+              <li>Fundos imobiliários na prática</li>
+              <li>Rebalanceamento trimestral</li>
+              <li>Mentoria em grupo semanal</li>
+            </ul>
+            <div class="challenge-foot">
+              <span class="price">R$ 297 <small>à vista</small></span>
+              <a href="#contato" class="btn btn-line-light magnetic">Participar</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="challenge-cta reveal">
+          <p>Não sabe qual desafio escolher?</p>
+          <a href="#contato" class="btn btn-outline-light magnetic">Fazer o teste de perfil →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PALESTRAS ================= -->
+    <section class="section" id="palestras">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="overline">Para igrejas e empresas</p>
+          <h2 class="section-title">Palestras que mudam o <em class="serif">cenário financeiro</em></h2>
+          <p class="section-sub">Do púlpito ao auditório: teologia e planilha lado a lado, com material de apoio e plano de ação.</p>
+        </header>
+
+        <div class="talks-grid">
+          <article class="talk tilt reveal">
+            <span class="talk-icon" aria-hidden="true">✦</span>
+            <h3>O dinheiro não é do diabo</h3>
+            <p>Uma visão bíblica saudável sobre riqueza, prosperidade e responsabilidade.</p>
+            <span class="talk-meta">60–90 min · Igrejas e seminários</span>
+          </article>
+          <article class="talk tilt reveal">
+            <span class="talk-icon" aria-hidden="true">✦</span>
+            <h3>Casamento sem dívidas</h3>
+            <p>Como alinhar finanças como casal sem brigas, com orçamento e metas em comum.</p>
+            <span class="talk-meta">90 min · Encontros de casais</span>
+          </article>
+          <article class="talk tilt reveal">
+            <span class="talk-icon" aria-hidden="true">✦</span>
+            <h3>Investir sem abandonar a fé</h3>
+            <p>Introdução prática a Tesouro Direto, CDBs e FIIs para cristãos iniciantes.</p>
+            <span class="talk-meta">120 min · Com oficina prática</span>
+          </article>
+          <article class="talk tilt reveal">
+            <span class="talk-icon" aria-hidden="true">✦</span>
+            <h3>Finanças da igreja e dos líderes</h3>
+            <p>Gestão eclesiástica, transparência e educação financeira para a comunidade.</p>
+            <span class="talk-meta">Sob demanda · Lideranças</span>
+          </article>
+        </div>
+
+        <div class="talks-cta reveal">
+          <a href="#contato" class="btn btn-primary magnetic">Solicitar orçamento de palestra <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DEPOIMENTOS ================= -->
+    <section class="section" id="depoimentos">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="overline">Resultados reais</p>
+          <h2 class="section-title">Quem viveu o método <em class="serif">conta</em></h2>
+        </header>
+
+        <div class="testimonial-carousel reveal" data-carousel>
+          <div class="testimonial-track" data-track>
+
+            <figure class="testimonial">
+              <span class="testi-stars" aria-hidden="true">★★★★★</span>
+              <blockquote>
+                “Saímos de R$ 38 mil em dívidas para R$ 12 mil de reserva em 10 meses.
+                O Desafio Sementes mudou a nossa casa.”
+              </blockquote>
+              <figcaption><strong>Ana &amp; Paulo Ribeiro</strong><span>Casados · Belo Horizonte</span></figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <span class="testi-stars" aria-hidden="true">★★★★★</span>
+              <blockquote>
+                “Levei a palestra para a igreja e 60 pessoas se inscreveram no curso depois.
+                O impacto foi imediato e duradouro.”
+              </blockquote>
+              <figcaption><strong>Pr. Marcos Andrade</strong><span>Igreja Vida Nova · Campinas</span></figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <span class="testi-stars" aria-hidden="true">★★★★★</span>
+              <blockquote>
+                “Nunca tinha investido um real. Em três meses já tinha Tesouro e CDB rendendo.
+                Ele explica com paciência e Palavra.”
+              </blockquote>
+              <figcaption><strong>Juliana Ferreira</strong><span>Enfermeira · Recife</span></figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <span class="testi-stars" aria-hidden="true">★★★★★</span>
+              <blockquote>
+                “A palestra na empresa gerou uma revolução silenciosa: em seis meses, 70% da
+                equipe começou a investir pelo menos R$ 100 por mês.”
+              </blockquote>
+              <figcaption><strong>Ricardo Almeida</strong><span>Gestor · GR Consultoria</span></figcaption>
+            </figure>
+
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn" data-prev aria-label="Depoimento anterior">←</button>
+            <span class="carousel-dots" data-dots></span>
+            <button class="carousel-btn" data-next aria-label="Próximo depoimento">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="section section-alt" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="overline">Vamos conversar</p>
+          <h2 class="section-title">Coloque suas finanças <em class="serif">em ordem</em></h2>
+          <p class="section-sub">
+            Preencha o formulário e retorno em até 24 horas úteis. Atendo consultorias
+            individuais, famílias, igrejas e empresas.
+          </p>
+          <ul class="contact-info">
+            <li><span>✉</span> contato@oziassantos.com.br</li>
+            <li><span>✆</span> (11) 90000-0000</li>
+            <li><span>◉</span> São Paulo · atendimento nacional online</li>
+          </ul>
+          <div class="social">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Seu nome">
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="voce@email.com">
+            </div>
+            <div class="field">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(00) 00000-0000">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="assunto">Como posso ajudar? *</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione…</option>
+              <option>Consultoria financeira</option>
+              <option>Calculadora / simulação</option>
+              <option>Desafio de investimento</option>
+              <option>Palestra / seminário</option>
+              <option>Outro assunto</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Conte um pouco sobre o seu momento…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block magnetic">Enviar mensagem <span aria-hidden="true">→</span></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#topo" class="brand">
+          <span class="brand-mark" aria-hidden="true">OZ</span>
+          <span class="brand-word">Ozias dos Santos</span>
+        </a>
+        <p>
+          Conteúdo educativo. Não constitui recomendação individual de investimento.
+          Rentabilidade passada não garante rentabilidade futura.
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="Rodapé">
+        <h4>Navegação</h4>
+        <a href="#sobre">O palestrante</a>
+        <a href="#principios">Princípios</a>
+        <a href="#simulador">Calculadora</a>
+        <a href="#investimentos">Investimentos</a>
+        <a href="#desafios">Desafios</a>
+      </nav>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p>contato@oziassantos.com.br</p>
+        <p>(11) 90000-0000</p>
+        <p>São Paulo · Brasil</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="ano">2026</span> Ozias dos Santos. Todos os direitos reservados.</p>
+        <a href="#topo" class="to-top">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
